@@ -1,0 +1,32 @@
+{
+  "name": "your-nails-look-so-pretty",
+  "scripts": {
+    "start": "beefy index.js:bundle.js --open",
+    "bundle": "browserify index.js -o bundle.js",
+    "watch": "watchify index.js -o bundle.js"
+  },
+  "dependencies": {
+    "beefy": "latest",
+    "browserify": "latest",
+    "glslify": "latest",
+    "soundcloud-badge": "0.0.0",
+    "gl-audio-analyser": "git://github.com/stackgl/gl-audio-analyser.git",
+    "watchify": "~2.4.0",
+    "gl-toy": "latest",
+    "glsl-raytrace": "~1.0.0",
+    "glsl-sdf-normal": "~1.0.0",
+    "glsl-noise": "0.0.0",
+    "glsl-turntable-camera": "~1.0.0",
+    "gl-shader": "~4.0.1",
+    "a-big-triangle": "~1.0.0",
+    "npm": "~2.7.5",
+    "gl-context": "~0.1.1",
+    "canvas-fit": "~1.3.0",
+    "glsl-smooth-min": "~1.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  }
+}
